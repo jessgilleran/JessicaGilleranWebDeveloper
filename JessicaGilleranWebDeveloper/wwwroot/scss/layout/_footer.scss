@@ -1,0 +1,23 @@
+﻿footer {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        border-top: 3px solid $green-bg-color;
+        margin: 0;
+        padding: 10px 0;
+
+        li {
+            a {
+                display: inline-block;
+                padding: 10px 20px;
+            }
+
+            a:hover {
+                background-color: $primary-pink;
+            }
+        }
+    }
+}

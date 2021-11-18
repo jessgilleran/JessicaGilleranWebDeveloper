@@ -1,0 +1,41 @@
+﻿@model JessicaGilleranWebDeveloper.ViewModels.ContactFormViewModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="contact-wrapper">
+    <h1>Reach Out</h1>
+    <p>Use the form below to get in touch. I would love to hear from anyone
+    regarding all things web development!</p>
+
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <form asp-action="SubmitForm">
+        <div class="form-element name-div">
+            <label asp-for="Name"></label>
+            <input tabindex="1" type="text" asp-for="Name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-element">
+            <label asp-for="Email"></label>
+            <input tabindex="1" type="text" asp-for="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-element">
+            <label asp-for="PhoneNumber"></label>
+            <input tabindex="1" type="text" asp-for="PhoneNumber" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+
+        <div class="form-element message-div">
+            <label asp-for="Message"></label>
+            <textarea tabindex="1" type="text" asp-for="Message"></textarea>
+            <span asp-validation-for="Message" class="text-danger"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

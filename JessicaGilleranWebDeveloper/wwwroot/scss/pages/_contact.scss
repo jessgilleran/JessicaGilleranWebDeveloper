@@ -1,0 +1,86 @@
+﻿.contact-wrapper {
+    width: 90%;
+    margin: 50px auto 0 auto;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .validation-summary-errors {
+        width: fit-content;
+        margin: 0 auto;
+        background-color: $form-input-color;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 30px auto 20px auto;
+        grid-gap: 20px;
+
+        input {
+            width: 100%;
+            padding: 5px;
+            background-color: $form-input-color;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input:focus-visible {
+            outline: none;
+            border: 2px solid $primary-green;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px;
+            background-color: $form-input-color;
+            border: none;
+            border-radius: 10px;
+            height: 120px
+        }
+
+        textarea:focus-visible {
+            outline: none;
+            border: 2px solid $primary-green;
+        }
+
+        @include min-sm {
+            grid-template-columns: repeat(2,1fr);
+            width: 80%;
+
+            .name-div {
+                grid-area: 1 / 1 / span 1 / span 2;
+            }
+
+            .message-div {
+                grid-area: 3 / 1 / span 1 / span 2;
+            }
+        }
+
+        @include min-med {
+            width: 70%;
+        }
+
+        @include min-xlg {
+            width: 55%;
+        }
+    }
+
+    button {
+        @include button;
+
+        @include min-sm {
+            grid-area: 4 / 1 / span 1 /span 2;
+        }
+    }
+}

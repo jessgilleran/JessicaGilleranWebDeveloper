@@ -1,0 +1,12 @@
+﻿.inquiry-confirmation-wrapper {
+    h1 {
+        margin-top: 40px;
+    }
+
+    a {
+        @include button;
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+

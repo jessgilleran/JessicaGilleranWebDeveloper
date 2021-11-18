@@ -1,0 +1,8 @@
+﻿.width-wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    @include min-xlg {
+        width: 60%;
+    }
+}

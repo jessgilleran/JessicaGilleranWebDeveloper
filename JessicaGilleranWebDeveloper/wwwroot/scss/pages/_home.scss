@@ -1,0 +1,114 @@
+﻿.home-main {
+    min-height: 100vh;
+    background-color: $light-bg-color;
+}
+
+.home-wrapper {
+    background-color: $green-bg-color;
+    /*border: solid 15px $light-bg-color;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    h1 {
+        color: /*#ebedeb*/ #cde9e6;
+        text-align: center;
+        padding: 0 10px;
+        font-weight: bold;
+        font-size: 400%;
+        animation: fadein 2s;
+    }
+
+    p {
+        width: 90%;
+        text-align: center;
+        color: #707070;
+        font-size: 150%;
+        animation: fadein 2.5s;
+
+        @include min-xsm {
+            width: 75%;
+        }
+
+        @include min-xlg {
+            width: 40%;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 30px 0 0 0;
+        /*        background-color: #cde9e6;*/
+        text-align: center;
+        font-size: 150%;
+        animation: fadein 3s;
+
+        @include min-xsm {
+            flex-direction: row;
+            width: 80%;
+        }
+
+        @include min-sm {
+            width: 60%;
+        }
+
+        @include min-med {
+            width: 50%;
+        }
+
+        @include min-xlg {
+            width: 40%;
+        }
+
+        :nth-child(1) {
+            a:hover {
+                background-color: #daa9ae;
+            }
+        }
+
+        :nth-child(2) {
+            a:hover {
+                background-color: #e2bbbf;
+            }
+        }
+
+        :nth-child(3) {
+            a:hover {
+                background-color: #e9cdd0;
+            }
+        }
+
+        :nth-child(4) {
+            a:hover {
+                background-color: #f1dee0;
+            }
+        }
+
+        li {
+            margin: 5px 0;
+            flex-grow: 1;
+
+            a {
+                display: inline-block;
+                width: 100%;
+                padding: 10px 20px;
+                color: #707070;
+                background-color: #cde9e6;
+                transition: all 0.8s ease-out;
+
+                @include min-xsm {
+                    padding: 10px 0;
+                }
+            }
+        }
+
+        .home-link {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+﻿.layout-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}

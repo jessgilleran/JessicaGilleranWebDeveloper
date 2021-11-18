@@ -1,0 +1,19 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $light-bg-color;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $dark-text-color;
+}

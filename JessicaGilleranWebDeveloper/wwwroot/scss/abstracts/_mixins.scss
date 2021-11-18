@@ -1,0 +1,39 @@
+﻿@mixin min-xsm {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin min-sm {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin min-med {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin min-lg {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin min-xlg {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin button {
+    background-color: $primary-green;
+    border: 3px solid $form-input-color;
+    border-radius: 99em;
+    width: fit-content;
+    color: $dark-text-color;
+    margin: 0 auto;
+    padding: 5px 20px;
+}
