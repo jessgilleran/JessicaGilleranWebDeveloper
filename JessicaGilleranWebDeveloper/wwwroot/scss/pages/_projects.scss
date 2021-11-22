@@ -25,10 +25,13 @@
             grid-gap: 20px;
             margin-top: 40px;
 
-            @include min-sm {
+            @include min-xsm {
                 grid-template-columns: repeat(2,1fr);
             }
 
+            @include min-med {
+                grid-template-columns: repeat(3,1fr);
+            }
             /*@include min-lg {
                 grid-template-columns: repeat(3,1fr);
             }*/
@@ -37,6 +40,15 @@
                 max-height: 100%;
                 max-width: 100%;
                 object-fit: cover;
+                border-radius: 10px;
+
+                @include min-xsm {
+                    height: 250px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center top;
+                    border-radius: 10px;
+                }
             }
         }
     }

@@ -413,10 +413,21 @@ footer ul {
       /*@include min-lg {
                 grid-template-columns: repeat(3,1fr);
             }*/ }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 576px) {
         .projects-wrapper .project .project-images-wrapper {
           grid-template-columns: repeat(2, 1fr); } }
+      @media screen and (min-width: 992px) {
+        .projects-wrapper .project .project-images-wrapper {
+          grid-template-columns: repeat(3, 1fr); } }
       .projects-wrapper .project .project-images-wrapper img {
         max-height: 100%;
         max-width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        border-radius: 10px; }
+        @media screen and (min-width: 576px) {
+          .projects-wrapper .project .project-images-wrapper img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 10px; } }

@@ -12,12 +12,38 @@
             and fully custom administration functionality.
         </p>
 
-        <p>I also plan to implement a shop for digital products on this page.</p>
+        <p>I also plan to implement a shop for digital products on this site.</p>
 
         <div class="project-images-wrapper">
-            <img src="~/Images/Projects/home-page.png" />
-            <img src="~/Images/Projects/calendar.png" />
+            <a href="~/Images/Projects/home-page.png" data-lightbox="site">
+                <img src="~/Images/Projects/home-page.png" />
+            </a>
+            <a href="~/Images/Projects/calendar.png" data-lightbox="site">
+                <img src="~/Images/Projects/calendar.png" />
+            </a>
+            <a href="~/Images/Projects/contact.png" data-lightbox="site">
+                <img src="~/Images/Projects/contact.png" />
+            </a>
+            <a href="~/Images/Projects/admin-manage-gallery.png" data-lightbox="site">
+                <img src="~/Images/Projects/admin-manage-gallery.png" />
+            </a>
+            <a href="~/Images/Projects/admin-manage-categories.png" data-lightbox="site">
+                <img src="~/Images/Projects/admin-manage-categories.png" />
+            </a>
         </div>
     </div>
 </div>
 
+@section Scripts{
+    <script src="~/lib/lightbox2/js/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'fitImagesInViewport': true,
+            'imageFadeDuration': 200,
+            'resizeDuration': 100
+
+        })
+    </script>
+}
+
+    
